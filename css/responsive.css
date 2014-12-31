@@ -1,0 +1,44 @@
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+/* Extra small devices (phones, less than 768px) */
+@media(max-width:767px){
+
+ .dash {
+  height: 56px;
+padding: 3px;
+width: 56px;
+}
+.dash .digit {
+font-size: 19px;
+width: 25px;
+}
+
+}
+	
+/* Small devices (tablets, 768px and up) */
+@media(min-width:768px){
+
+
+}
+
+
+
+/* Medium devices (desktops, 992px and up) */
+@media(min-width:992px){
+
+#bottom_x_tree{min-height: 306px;}
+
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media(min-width:1200px){
+
+
+#bottom_x_tree{min-height: 350px;}
+}
+
+	

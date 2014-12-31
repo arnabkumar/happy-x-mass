@@ -1,0 +1,219 @@
+/*
+Happy Ex-Mass - Coming Soon Template
+
+Content Tabel
++---------------+
+
+-Common Stuff
+-top paralax doll area styles
+-top santa cap Styles
+-comming_soon_div area and Countdown Styles
+-santa_friend_moove area Styles
+- bottom x tree animation Styles
+- Preloader Styles
+
+*/
+* {margin:0;padding:0}
+html{font-size: 10px;}
+body {overflow: hidden;background:#100808;color:#ffffff;}
+a {text-decoration:none;color:#000}
+a:hover {text-decoration:none}
+/* this code for bootstrap a:visited, a:focus, a:active none */
+a:visited, a:focus, a:active{text-decoration:none;outline:none;}
+ul, ol {margin:0;padding:0;}
+.fix {overflow:hidden}
+
+/* This class and code for also wordpress align */
+.alignleft {float:left;margin-right:10px}
+.alignright {float:right;margin-left:10px}
+.aligncenter {display:block;margin:0 auto}
+.floatleft {float:left}
+.floatright {float:right}
+.container {transition: all 0.9s ease 0s;-moz-transition: all 0.9s ease 0s;-webkit-transition: all 0.9s ease 0s;-o-transition: all 0.9s ease 0s;}
+
+/* This Code For Only First And Last Element  */
+.firstelement{margin-left:0px;}
+.lastlement{margin-right:0px;}
+
+
+
+div.custom_container_class {
+ padding-left: 0;
+padding-right: 0;
+}
+
+/* top paralax doll area */
+
+
+ div#top_paralax_container_id {position: relative;}
+  div#top_paralax_container_id #top_p_banar_id{background: url("../images/top_ball.png") repeat scroll 0 0 / cover  rgba(0, 0, 0, 0);
+height: 405px;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;
+z-index: 3;
+background-position: center center;}
+
+
+/* top santa cap Styles */
+div#top_santa_cap_id {
+cursor: pointer;
+height: 300px;
+position: absolute;
+width: 300px;
+z-index: 6;
+}
+
+
+/* comming_soon_div area and Countdown Styles */
+div.comming_soon_div{display: block;
+margin-top: 349px;
+position: relative;
+text-align: center;
+z-index: 9;}
+div.comming_soon_div h1{font-family: "Ribeye Marrow",cursive;
+font-weight: bold;animation: 5s linear 0s normal none infinite running pulse;}
+div.comming_soon_div h3{font-family: 'Averia Sans Libre', cursive;}
+/* Countdown Styles */
+/*Counter*/
+#countdown_dashboard {
+  height: 70px;
+  margin: 20px 0px;
+}
+.dash {
+  background: none repeat scroll 0 0 #712727;
+display: inline-block;
+height: 70px;
+padding: 10px;
+width: 70px;
+box-shadow: 1px 1px 2px #ffffff;
+}
+.dash .digit {
+  float: left;
+font-family: "Dosis",sans-serif;
+font-size: 29px;
+font-weight: bold !important;
+width: 25px;
+}
+.dash_title {
+  
+  color: #ffffff;
+}
+/* sign_up_form*/
+.btn_submit{background: none repeat scroll 0 0 #00778b;
+border-color: #ccc;
+text-shadow: 0 0px 0 #fff;color:#ffffff;}
+.btn_submit:hover{background:#712727;color:#ffffff;}
+div.sign_up_form div.input-group-addon{background-color: #dac22c;
+color: #000;border:1px solid #712727;}
+div.sign_up_form .form-inline .form-group .input-group #xmass_email_n {
+  background-color: transparent; color: #ffffff;}
+  
+.form-control{border: 1px solid #712727;}
+.form-control:focus{border-color:#00778b;box-shadow:none;}
+.form-control::-moz-placeholder {color: #ffffff;opacity: 1;}
+.form-control:-ms-input-placeholder {color: #ffffff;}
+.form-control::-webkit-input-placeholder {color: #ffffff;}
+
+
+/* santa_friend_moove area */
+#santa_friend_moove {
+  cursor: pointer;
+height: 300px;
+position: absolute;
+width: 300px;
+z-index: 7;
+}
+
+
+
+
+
+/* background animation */
+#bottom_x_tree {background: url("../images/x_tree.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+bottom: -104px;
+min-height: 350px;
+position: absolute;
+width: 100%;
+z-index: 6;
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------ */
+/*  Preloader CSS */ 
+/* ------------------------------------------------------------------ */
+
+#preloader{
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  z-index:9999;
+  background-color:#100808;
+  background: -webkit-linear-gradient(90deg, #100808 10%, #506cc8 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #100808 10%, #506cc8 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #100808 10%, #506cc8 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #100808 10%, #506cc8 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #100808 10%, #506cc8 90%); /* W3C */
+        
+}
+
+
+.loader {
+  animation: animate 1.5s linear infinite;
+  clip: rect(0, 80px, 80px, 40px); 
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  left: calc(50% - 40px);
+  top: calc(50% - 40px);
+  z-index: 999;
+}
+
+@keyframes animate {
+  0% { 
+    transform: rotate(0deg)
+  }
+  100% { 
+    transform: rotate(220deg)
+  }
+}
+.loader:after {
+  animation: animate2 1.5s ease-in-out infinite;
+  clip: rect(0, 80px, 80px, 40px);
+  content:'';
+  border-radius: 50%; 
+  height: 80px;
+  width: 80px;
+  position: absolute; 
+} 
+@keyframes animate2 {
+  0% {
+    box-shadow: inset #fff 0 0 0 17px;
+    transform: rotate(-140deg);
+  }
+  50% {
+    box-shadow: inset #fff 0 0 0 2px;
+  }
+  100% {
+    box-shadow: inset #fff 0 0 0 17px;
+    transform: rotate(140deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
